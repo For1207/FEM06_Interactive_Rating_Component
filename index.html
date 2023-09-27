@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="container">
-    <div class="rating-cont">
+    <div class="rating-cont" id="rating-cont">
       <div class="top-image">
         <img src="./images/icon-star.svg" alt="star icon">
       </div>
@@ -19,17 +19,17 @@
         <p>Please let us know how we did with your support request. All feedback is appreciated 
     to help us improve our offering!</p>
       </div>
-      <div class="rating">
-        <span id="s-one">1</span>
-        <span id="s-two">2</span>
-        <span id="s-three">3</span>
-        <span id="s-four">4</span>
-        <span id="s-five">5</span>
+      <div class="rating" id="rating" onmouseover="orangeBgn(event)" onmouseout="whiteBgn(event)" onclick="grayBgn(event)" >
+        <span id="1">1</span>
+        <span id="2">2</span>
+        <span id="3">3</span>
+        <span id="4">4</span>
+        <span id="5">5</span>
       </div>
-      <div class="submit-btn">Submit</div>
+      <div class="submit-btn" onclick="displayScore()">Submit</div>
     </div>
     
-    <div class="thank_you-cont">
+    <div class="thank_you-cont" id="thank_you-cont" >
       <img src="./images/illustration-thank-you.svg" alt="thank you image">
       <p class="score-selected">You selected<span id="scored"> 0 </span>out of 5</p>
       <h1>Thank you!</h1>
@@ -42,5 +42,6 @@
       Coded by <a href="#">Igor Mykhalchuk</a>.
     </div>
 
+    <script src="./script.js"></script>
 </body>
 </html>
